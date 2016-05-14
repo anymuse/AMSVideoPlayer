@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46943658A14688258A198B34 /* libPods-AMSVideoPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF9B7E11C75B8D43AFF8782 /* libPods-AMSVideoPlayer.a */; };
 		A30ABCC21CE71E9500D65E97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A30ABCC11CE71E9500D65E97 /* main.m */; };
 		A30ABCC51CE71E9500D65E97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A30ABCC41CE71E9500D65E97 /* AppDelegate.m */; };
 		A30ABCC81CE71E9500D65E97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30ABCC71CE71E9500D65E97 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		A30ABCCD1CE71E9500D65E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30ABCCC1CE71E9500D65E97 /* Assets.xcassets */; };
 		A30ABCD01CE71E9500D65E97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30ABCCE1CE71E9500D65E97 /* LaunchScreen.storyboard */; };
 		A30ABCDB1CE71E9500D65E97 /* AMSVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30ABCDA1CE71E9500D65E97 /* AMSVideoPlayerTests.m */; };
+		D6C4D729766D31D3E23AF50D /* libPods-AMSVideoPlayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B64C5BB5D53EA54124D6221 /* libPods-AMSVideoPlayerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07CE3E4EA175F36F12BD12CF /* Pods-AMSVideoPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSVideoPlayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMSVideoPlayerTests/Pods-AMSVideoPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39B196255AD36D1DD35C511D /* Pods-AMSVideoPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSVideoPlayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMSVideoPlayerTests/Pods-AMSVideoPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B64C5BB5D53EA54124D6221 /* libPods-AMSVideoPlayerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMSVideoPlayerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2339DBD3BDFB9569D727A5 /* Pods-AMSVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSVideoPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMSVideoPlayer/Pods-AMSVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		9476CC1A286091D9D86015C3 /* Pods-AMSVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSVideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMSVideoPlayer/Pods-AMSVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		A30ABCBD1CE71E9500D65E97 /* AMSVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMSVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30ABCC11CE71E9500D65E97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A30ABCC31CE71E9500D65E97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		A30ABCD61CE71E9500D65E97 /* AMSVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMSVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30ABCDA1CE71E9500D65E97 /* AMSVideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSVideoPlayerTests.m; sourceTree = "<group>"; };
 		A30ABCDC1CE71E9500D65E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF9B7E11C75B8D43AFF8782 /* libPods-AMSVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMSVideoPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46943658A14688258A198B34 /* libPods-AMSVideoPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C4D729766D31D3E23AF50D /* libPods-AMSVideoPlayerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0204EC631624E6A89391B4F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F2339DBD3BDFB9569D727A5 /* Pods-AMSVideoPlayer.debug.xcconfig */,
+				9476CC1A286091D9D86015C3 /* Pods-AMSVideoPlayer.release.xcconfig */,
+				07CE3E4EA175F36F12BD12CF /* Pods-AMSVideoPlayerTests.debug.xcconfig */,
+				39B196255AD36D1DD35C511D /* Pods-AMSVideoPlayerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		387E92279C5E9772841452E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAF9B7E11C75B8D43AFF8782 /* libPods-AMSVideoPlayer.a */,
+				7B64C5BB5D53EA54124D6221 /* libPods-AMSVideoPlayerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A30ABCB41CE71E9400D65E97 = {
 			isa = PBXGroup;
 			children = (
 				A30ABCBF1CE71E9500D65E97 /* AMSVideoPlayer */,
 				A30ABCD91CE71E9500D65E97 /* AMSVideoPlayerTests */,
 				A30ABCBE1CE71E9500D65E97 /* Products */,
+				0204EC631624E6A89391B4F0 /* Pods */,
+				387E92279C5E9772841452E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A30ABCDF1CE71E9500D65E97 /* Build configuration list for PBXNativeTarget "AMSVideoPlayer" */;
 			buildPhases = (
+				05F00F1B57C5CDB11710B52B /* 📦 Check Pods Manifest.lock */,
 				A30ABCB91CE71E9500D65E97 /* Sources */,
 				A30ABCBA1CE71E9500D65E97 /* Frameworks */,
 				A30ABCBB1CE71E9500D65E97 /* Resources */,
+				9FCF191A2C655BD5E8F1DA28 /* 📦 Embed Pods Frameworks */,
+				D2993CC3F912B1F9E02A230E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A30ABCE21CE71E9500D65E97 /* Build configuration list for PBXNativeTarget "AMSVideoPlayerTests" */;
 			buildPhases = (
+				83D87292157C38AA749055C9 /* 📦 Check Pods Manifest.lock */,
 				A30ABCD21CE71E9500D65E97 /* Sources */,
 				A30ABCD31CE71E9500D65E97 /* Frameworks */,
 				A30ABCD41CE71E9500D65E97 /* Resources */,
+				19B1D2A3E36DD8869947978B /* 📦 Embed Pods Frameworks */,
+				60CD51C85D4135DFAAA79652 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +193,7 @@
 		A30ABCB51CE71E9400D65E97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AMS;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Talenton;
 				TargetAttributes = {
@@ -168,7 +207,7 @@
 				};
 			};
 			buildConfigurationList = A30ABCB81CE71E9400D65E97 /* Build configuration list for PBXProject "AMSVideoPlayer" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -205,6 +244,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05F00F1B57C5CDB11710B52B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		19B1D2A3E36DD8869947978B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMSVideoPlayerTests/Pods-AMSVideoPlayerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60CD51C85D4135DFAAA79652 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMSVideoPlayerTests/Pods-AMSVideoPlayerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D87292157C38AA749055C9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FCF191A2C655BD5E8F1DA28 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMSVideoPlayer/Pods-AMSVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2993CC3F912B1F9E02A230E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMSVideoPlayer/Pods-AMSVideoPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A30ABCB91CE71E9500D65E97 /* Sources */ = {
@@ -341,6 +473,7 @@
 		};
 		A30ABCE01CE71E9500D65E97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2339DBD3BDFB9569D727A5 /* Pods-AMSVideoPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMSVideoPlayer/Info.plist;
@@ -352,6 +485,7 @@
 		};
 		A30ABCE11CE71E9500D65E97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9476CC1A286091D9D86015C3 /* Pods-AMSVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMSVideoPlayer/Info.plist;
@@ -363,6 +497,7 @@
 		};
 		A30ABCE31CE71E9500D65E97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07CE3E4EA175F36F12BD12CF /* Pods-AMSVideoPlayerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AMSVideoPlayerTests/Info.plist;
@@ -375,6 +510,7 @@
 		};
 		A30ABCE41CE71E9500D65E97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B196255AD36D1DD35C511D /* Pods-AMSVideoPlayerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AMSVideoPlayerTests/Info.plist;
@@ -404,6 +540,7 @@
 				A30ABCE11CE71E9500D65E97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30ABCE21CE71E9500D65E97 /* Build configuration list for PBXNativeTarget "AMSVideoPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +549,7 @@
 				A30ABCE41CE71E9500D65E97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
