@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <Masonry.h>
+#import "AMSVideoPlayerView.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) AMSVideoPlayerView *playerView;
 
 @end
 
@@ -16,12 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.playerView = [[AMSVideoPlayerView alloc] initWithURL:[NSURL URLWithString:@""] containerViewController:self];
+    self.playerView.frame = CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width * 9 / 16);
+    self.playerView.layer.backgroundColor = [UIColor redColor].CGColor;
+    [self.view addSubview:self.playerView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    if ([UIDevice currentDevice].orientation != UIDeviceOrientationPortrait) {
+        return UIStatusBarStyleLightContent;
+    }
+    return UIStatusBarStyleDefault;
 }
 
 @end

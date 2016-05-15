@@ -8,6 +8,43 @@
 
 #import "AppDelegate.h"
 
+@implementation UITabBarController (Rotation)
+
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return self.selectedViewController.supportedInterfaceOrientations;
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return self.selectedViewController.preferredInterfaceOrientationForPresentation;
+}
+
+@end
+
+@implementation UINavigationController (Rotation)
+
+- (BOOL)shouldAutorotate {
+    return self.topViewController.shouldAutorotate;
+}
+
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return [self.topViewController supportedInterfaceOrientations];
+}
+
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return [self.topViewController preferredInterfaceOrientationForPresentation];
+}
+
+@end
+
 @interface AppDelegate ()
 
 @end
