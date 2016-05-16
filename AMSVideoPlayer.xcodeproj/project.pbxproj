@@ -19,6 +19,8 @@
 		A30ABCCD1CE71E9500D65E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30ABCCC1CE71E9500D65E97 /* Assets.xcassets */; };
 		A30ABCD01CE71E9500D65E97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30ABCCE1CE71E9500D65E97 /* LaunchScreen.storyboard */; };
 		A30ABCDB1CE71E9500D65E97 /* AMSVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A30ABCDA1CE71E9500D65E97 /* AMSVideoPlayerTests.m */; };
+		A3B58EED1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B58EEC1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.m */; };
+		A3B58EEE1CE99AF600B16362 /* AMSVideoPlayerView+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B58EEC1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.m */; };
 		D6C4D729766D31D3E23AF50D /* libPods-AMSVideoPlayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B64C5BB5D53EA54124D6221 /* libPods-AMSVideoPlayerTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		A30ABCD61CE71E9500D65E97 /* AMSVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMSVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30ABCDA1CE71E9500D65E97 /* AMSVideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSVideoPlayerTests.m; sourceTree = "<group>"; };
 		A30ABCDC1CE71E9500D65E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B58EEB1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AMSVideoPlayerView+Rotation.h"; sourceTree = "<group>"; };
+		A3B58EEC1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AMSVideoPlayerView+Rotation.m"; sourceTree = "<group>"; };
 		BAF9B7E11C75B8D43AFF8782 /* libPods-AMSVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMSVideoPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +161,8 @@
 				A302FEFE1CE8CB1200DFA155 /* AMSVideoPlayerView.h */,
 				A302FEFF1CE8CB1200DFA155 /* AMSVideoPlayerView.m */,
 				A302FF021CE8CB1E00DFA155 /* AMSVideoPlayerView.xib */,
+				A3B58EEB1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.h */,
+				A3B58EEC1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.m */,
 			);
 			path = AMSVideoPlayer;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 			files = (
 				A30ABCC81CE71E9500D65E97 /* ViewController.m in Sources */,
 				A30ABCC51CE71E9500D65E97 /* AppDelegate.m in Sources */,
+				A3B58EED1CE99AF500B16362 /* AMSVideoPlayerView+Rotation.m in Sources */,
 				A302FF001CE8CB1200DFA155 /* AMSVideoPlayerView.m in Sources */,
 				A30ABCC21CE71E9500D65E97 /* main.m in Sources */,
 			);
@@ -376,6 +383,7 @@
 			files = (
 				A30ABCDB1CE71E9500D65E97 /* AMSVideoPlayerTests.m in Sources */,
 				A302FF011CE8CB1200DFA155 /* AMSVideoPlayerView.m in Sources */,
+				A3B58EEE1CE99AF600B16362 /* AMSVideoPlayerView+Rotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,9 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AMSVideoPlayerView : UIView
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic, readonly) AVPlayerLayer *playerLayer;
 
-- (instancetype)initWithURL:(NSURL *)url containerViewController:(UIViewController *)viewController;
+- (instancetype)initWithContainerViewController:(UIViewController *)viewController;
+
+- (void)playVideoWithURL:(NSURL *)url;
+
+- (BOOL)isLandscape;
+- (BOOL)prefersStatusBarHidden;
 
 @end
 
