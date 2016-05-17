@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithContainerViewController:(UIViewController *)viewController;
 
 - (void)playVideoWithURL:(NSURL *)url;
-
+- (void)pause;
 - (BOOL)isLandscape;
 - (BOOL)prefersStatusBarHidden;
 

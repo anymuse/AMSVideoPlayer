@@ -103,6 +103,7 @@ static NSString * const kTimedMetadataKey	= @"currentItem.timedMetadata";
     [self removePlayerTimeObserver];
     [self.player pause];
     [self.player replaceCurrentItemWithPlayerItem:nil];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 #pragma mark - Action
@@ -112,18 +113,22 @@ static NSString * const kTimedMetadataKey	= @"currentItem.timedMetadata";
 }
 
 - (IBAction)didTapPlayButton:(UIButton *)sender {
-    sender.selected = !sender.selected;
-    /* If we are at the end of the movie, we must seek to the beginning first
-     before starting playback. */
-    if (sender.selected) {
-        if (self.seekToZeroBeforePlay) {
-            self.seekToZeroBeforePlay = NO;
-            [self.player seekToTime:kCMTimeZero];
+    if (sender) {
+        sender.selected = !sender.selected;
+        /* If we are at the end of the movie, we must seek to the beginning first
+         before starting playback. */
+        if (sender.selected) {
+            if (self.seekToZeroBeforePlay) {
+                self.seekToZeroBeforePlay = NO;
+                [self.player seekToTime:kCMTimeZero];
+            }
+            [self.player play];
+        } else {
+            [self.player pause];
+            self.pausedByUser = YES;
         }
-        [self.player play];
     } else {
         [self.player pause];
-        self.pausedByUser = YES;
     }
 }
 
@@ -317,6 +322,10 @@ static NSString * const kTimedMetadataKey	= @"currentItem.timedMetadata";
     
     [self.videoTimeControl setValue:0.0];
     [self.player play];
+}
+
+- (void)pause {
+    [self didTapPlayButton:nil];
 }
 
 -(void)assetFailedToPrepareForPlayback:(NSError *)error {
@@ -540,7 +549,7 @@ static NSString * const kTimedMetadataKey	= @"currentItem.timedMetadata";
 }
 
 - (void)setCurrentOrientation:(UIDeviceOrientation)currentOrientation {
-    if (!self.readyToPlay && currentOrientation != UIDeviceOrientationPortrait) {
+    if (!self.playerLayer.isReadyForDisplay && currentOrientation != UIDeviceOrientationPortrait) {
         return;
     }
     if (_currentOrientation == currentOrientation || (currentOrientation != UIDeviceOrientationPortrait && !UIDeviceOrientationIsLandscape(currentOrientation))) {
